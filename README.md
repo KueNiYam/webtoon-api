@@ -35,6 +35,11 @@ spring:
       on-profile: local
 
 ---
+spring:
+  config:
+    activate:
+      on-profile: test
+---
 
 spring:
   config:
