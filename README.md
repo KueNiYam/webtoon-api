@@ -24,27 +24,34 @@ flowchart BT
 
 환경은 프로파일로 구분합니다.
 
-- `local`
-- `prod`
-- `test`
-
 ```yaml
 spring:
   config:
     activate:
-      on-profile: local
+      on-profile: app-local
 
----
-spring:
-  config:
-    activate:
-      on-profile: test
 ---
 
 spring:
   config:
     activate:
-      on-profile: prod
+      on-profile: app-test
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: app-prod
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: admin-local
+
+  ...
 ```
 
-애플리케이션은 각 모듈 `resources` 디렉터리의 `application.yml` 파일을 사용합니다.
+애플리케이션은 프로젝트 루트의 `config/` 에 정의된 설정파일을 사용합니다.
