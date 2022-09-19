@@ -4,6 +4,10 @@
 
 ## Link
 
+## Project board
+
+이슈 관리 도구로는 [Trello](https://trello.com/b/X4rTGNYR/webtoon) 를 사용하고 있습니다.
+
 ## Modules
 
 ```mermaid
